@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .l{
+            background-color: blueviolet;
+        }
+        .container{
+            height: 1000px;
+            background-color: yellow;
+            display: flex;
+
+        }
+        .box{
+            background-color: darkmagenta;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            
+            animation-name: lishu2;
+            animation-duration: 8s;
+            animation-iteration-count: 1;
+        
+
+
+        /*short hand of animation*/
+        animation: lishu2
+        5s ease-in 1s 12 backwards;
+        }
+        @keyframes lishu2{
+            0%{
+              top:0px;
+              left:0px;
+            }
+            25%{
+              top:250px;
+              left:0px
+            }
+            75%{
+                top:250px;
+                left:250px;
+            }
+            100%{
+                top:0px;
+                left:250px;
+            }
+
+        }
+        @keyframes lishu1 {
+            from{
+            width: 200px;
+
+            }
+            to{
+           width:400px
+            }
+        }
+        div {
+  width: 100px;
+  height: 50px;
+  background-color: red;
+  font-weight: bold;
+  position: relative;
+  animation: mymove 5s;
+  animation-fill-mode: forwards;
+}
+
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 300px;}
+}
+button{
+        width: 120px;
+        height: 70px;
+        background-color: red;
+        color: aliceblue;
+    }
+
+    </style>
+</head>
+<body>
+    <h1 class="l">How to create animation in using html and css.</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio ut eveniet architecto unde, blanditiis fugiat esse molestiae assumenda quia aliquid eos maiores libero reiciendis ipsam sapiente commodi quisquam exercitationem quis beatae? Minus harum pariatur fuga et nemo ipsum maiores culpa aliquid deserunt magni libero, nostrum amet accusantium officiis tempora similique placeat. A eum suscipit, iste voluptatibus commodi culpa quis totam illo numquam adipisci reiciendis maxime est, fugiat delectus rerum maiores tempore dignissimos nostrum ipsa alias non voluptates. Repellat aliquid consequuntur a deserunt, ad deleniti odio pariatur sed voluptate temporibus officia suscipit ratione quo ea esse possimus odit, eveniet nemo. Similique.</p>
+    <div class="container">
+        <div class="box">This is a box</div>
+    </div>
+    <h1>CSS Animation</h1>
+
+<p>The animation-timing-function property specifies the speed curve of the animation. The following example shows some of the different speed curves that can be used:</p>
+
+<div id="div1">linear</div>
+<div id="div2">ease</div>
+<div id="div3">ease-in</div>
+<div id="div4">ease-out</div>
+<div id="div5">ease-in-out</div>
+<a href="http://127.0.0.1:5500/index.html#blog"><button>Back</button></a>
+</body>
+</html>
