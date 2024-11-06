@@ -47,7 +47,7 @@ nav {
     
 }
 #profile{
-    background: url('/i.jpg') no-repeat center/cover ;
+    background: url('file:///C:/Users/swapn/Downloads/i.jpg') no-repeat center/cover ;
     background-size: 100% 100%;
     height: 100vh;
     display: flex;
